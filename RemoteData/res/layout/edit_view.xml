@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/firstName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/firstName" />
+
+    <EditText
+        android:id="@+id/edit_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstName_label"
+        android:layout_below="@+id/firstName_label"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lastName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_firstName"
+        android:layout_below="@+id/edit_firstName"
+        android:layout_marginTop="10dp"
+        android:text="@string/lastName" />
+
+    <EditText
+        android:id="@+id/edit_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastName_label"
+        android:layout_below="@+id/lastName_label"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/phoneNumber_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_lastName"
+        android:layout_below="@+id/edit_lastName"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phoneNumber_label"
+        android:layout_below="@+id/phoneNumber_label"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_phone"
+        android:layout_below="@+id/edit_phone"
+        android:layout_marginTop="10dp"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_label"
+        android:layout_below="@+id/email_label"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/comp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_email"
+        android:layout_below="@+id/edit_email"
+        android:layout_marginTop="10dp"
+        android:text="@string/compId" />
+
+    <EditText
+        android:id="@+id/edit_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comp_label"
+        android:layout_below="@+id/comp_label"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_comp"
+        android:layout_below="@+id/edit_comp"
+        android:layout_marginTop="10dp"
+        android:text="@string/status" />
+
+    <EditText
+        android:id="@+id/edit_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status_label"
+        android:layout_below="@+id/status_label"
+        android:ems="10"
+        android:inputType="textCapWords" />
+
+    <Button
+        android:id="@+id/edit_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/buttonSave" />
+
+</RelativeLayout>

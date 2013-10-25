@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/list_name"
+        android:layout_weight="2"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:layout_height="40dp"/>
+    <TextView 
+        android:id="@+id/list_phone"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:layout_height="40dp"/>
+    <TextView 
+        android:id="@+id/list_email"
+        android:layout_weight="2"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:layout_height="40dp"/>
+    <TextView 
+        android:id="@+id/list_compId"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:layout_height="40dp"/>
+    <TextView 
+        android:id="@+id/list_status"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

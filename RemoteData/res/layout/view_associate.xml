@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/view_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_phone"
+        android:layout_below="@+id/view_phone"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/view_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_Name"
+        android:layout_below="@+id/view_Name"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/view_comp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_email"
+        android:layout_below="@+id/view_email"
+        android:layout_marginTop="25dp"
+        android:text="@string/compId"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/view_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_comp_label"
+        android:layout_below="@+id/view_comp_label"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/view_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_comp"
+        android:layout_below="@+id/view_comp"
+        android:layout_marginTop="15dp"
+        android:text="@string/status2"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/view_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_status_label"
+        android:layout_below="@+id/view_status_label"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/view_button_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_status"
+        android:layout_marginTop="35dp" >
+
+        <Button
+            android:id="@+id/view_edit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/AppBaseTheme"
+            android:text="@string/buttonEdit" />
+
+        <Button
+            android:id="@+id/view_delete_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/AppBaseTheme"
+            android:text="@string/buttonDelete" />
+    </LinearLayout>
+
+</RelativeLayout>
